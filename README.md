@@ -126,55 +126,6 @@ The project requires several key dependencies which are installed via PNPM:
 - Solana packages (`@solana/web3.js`, `@solana/wallet-adapter-*`)
 - DaisyUI (`daisyui`)
 
-### Installation and Running Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone [repository_url]
-   cd yetbet_app
-   ```
-
-2. **Create environment files**
-   Create a `.env` file in the root directory with all required variables.
-
-3. **Install dependencies**
-   ```bash
-   pnpm install
-   ```
-
-4. **Create workspace configuration**
-   Create a `pnpm-workspace.yaml` file with:
-   ```yaml
-   packages:
-     - "."
-     - "worker"
-   ```
-
-5. **Run the development server**
-   ```bash
-   pnpm dev
-   ```
-
-6. **Build for production**
-   ```bash
-   pnpm build
-   ```
-
-### Troubleshooting Common Issues
-
-1. **Firebase API Key Invalid**
-   - Error: `FirebaseError: Firebase: Error (auth/invalid-api-key)`
-   - Solution: Ensure Firebase configuration in `.env` file is correct
-
-2. **Missing DaisyUI Classes**
-   - Error: `The 'bg-base-100' class does not exist`
-   - Solution: Ensure DaisyUI is properly installed and configured in `tailwind.config.js`
-
-3. **Wallet Adapter Issues**
-   - Error: `Can't resolve '@solana/wallet-adapter-react-ui'`
-   - Solution: Ensure all Solana wallet adapter packages are installed
-
-## 4. Architecture and Design
 
 ### Authentication System
 The application uses a hybrid authentication system:
@@ -213,4 +164,4 @@ User Actions → React Components → Context API → Service Layer → Firebase
 
 ---
 
-This documentation provides a comprehensive overview of the YETbet application architecture, routing structure, and requirements. For further details on specific components or functionality, please refer to the source code and inline comments.
+This documentation provides a comprehensive overview of the YETbet application architecture, routing structure, and requirements.
